@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Active Directory - Portfolio E5</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Projet 1 - Infrastructure Active Directory sécurisée</h1>
+            <p>BTS SIO SISR - Épreuve E5</p>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Retour au portfolio</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h2>Contexte</h2>
+            <p>
+                Dans le cadre de ma préparation au BTS SIO option SISR, j’ai réalisé un projet de mise en place
+                d’une infrastructure Active Directory afin de reproduire un environnement professionnel de gestion
+                centralisée des utilisateurs, des postes et des droits d’accès.
+            </p>
+        </section>
+
+        <section>
+            <h2>Objectifs</h2>
+            <ul>
+                <li>Installer et configurer un serveur Windows Server 2022</li>
+                <li>Mettre en place Active Directory Domain Services</li>
+                <li>Créer un domaine d’entreprise</li>
+                <li>Structurer l’organisation avec des unités d’organisation</li>
+                <li>Gérer les utilisateurs, groupes et droits d’accès</li>
+                <li>Déployer des stratégies de groupe pour renforcer la sécurité</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Environnement technique</h2>
+            <ul>
+                <li>Windows Server 2022</li>
+                <li>Poste client Windows 10</li>
+                <li>Active Directory Domain Services</li>
+                <li>DNS</li>
+                <li>Domaine : <strong>entreprise.local</strong></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Réalisation</h2>
+            <ul>
+                <li>Installation du rôle AD DS sur le serveur</li>
+                <li>Promotion du serveur en contrôleur de domaine</li>
+                <li>Création du domaine <strong>entreprise.local</strong></li>
+                <li>Création d’unités d’organisation : Direction, RH, Infra, Comptabilité</li>
+                <li>Création des comptes utilisateurs et groupes</li>
+                <li>Mise en place de partages réseau avec gestion des permissions</li>
+                <li>Configuration de GPO de sécurité</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sécurité mise en place</h2>
+            <ul>
+                <li>Politique de mot de passe complexe</li>
+                <li>Restriction d’accès à certaines fonctionnalités système</li>
+                <li>Gestion des droits selon le principe du moindre privilège</li>
+                <li>Contrôle des accès aux dossiers partagés via ACL</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Problèmes rencontrés</h2>
+            <p>
+                Lors de la mise en place, j’ai rencontré des difficultés concernant l’application de certaines GPO
+                et la propagation de droits sur des dossiers partagés.
+            </p>
+            <p>
+                Pour résoudre ces problèmes, j’ai utilisé des outils et commandes comme
+                <strong>gpupdate /force</strong>, la console <strong>gpmc.msc</strong>
+                et la vérification de l’héritage des permissions.
+            </p>
+        </section>
+
+        <section>
+            <h2>Résultats obtenus</h2>
+            <p>
+                Ce projet m’a permis de mettre en place une infrastructure Active Directory centralisée,
+                cohérente et sécurisée, proche d’un environnement d’entreprise réel.
+            </p>
+            <p>
+                J’ai pu mieux comprendre la gestion des identités, des stratégies de groupe, des droits d’accès
+                et l’administration d’un domaine Windows.
+            </p>
+        </section>
+
+        <section>
+            <h2>Compétences BTS mobilisées</h2>
+            <ul>
+                <li>Mettre à disposition des utilisateurs un service informatique</li>
+                <li>Répondre aux incidents et aux demandes d’assistance</li>
+                <li>Administrer les systèmes et les réseaux</li>
+                <li>Sécuriser l’infrastructure et les accès</li>
+                <li>Documenter une réalisation technique</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Éléments de preuve à intégrer</h2>
+            <ul>
+                <li>Capture de la console Active Directory</li>
+                <li>Capture des OU créées</li>
+                <li>Capture des GPO configurées</li>
+                <li>Capture des partages réseau et permissions</li>
+                <li>Tests de connexion au domaine depuis le poste client</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Portfolio E5 BTS SIO SISR - David N'KPOME</p>
+        </div>
+    </footer>
+</body>
+</html>
