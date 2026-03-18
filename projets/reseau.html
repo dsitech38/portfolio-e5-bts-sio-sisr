@@ -69,15 +69,46 @@ une infrastructure d’entreprise sécurisée.
 
 
 <section>
+<h2>Schéma de l’architecture réseau</h2>
+
+<p>
+L’infrastructure réseau a été segmentée en plusieurs VLAN afin
+d’améliorer la sécurité, l’organisation et la gestion des accès.
+</p>
+
+<img src="../assets/preuves/schemas/schema-reseau-vlan.png"
+     alt="Schéma réseau VLAN"
+     style="max-width:100%; border:1px solid #ccc; margin-top:10px;">
+
+</section>
+
+
+<section>
 <h2>Réalisation</h2>
 
 <ul>
 <li>Configuration des VLAN sur le switch</li>
-<li>Configuration du routage</li>
-<li>Mise en place DHCP</li>
-<li>Configuration DNS</li>
+<li>Configuration du routage inter-VLAN</li>
+<li>Mise en place du serveur DHCP</li>
+<li>Configuration du serveur DNS</li>
 <li>Tests ping / ipconfig / tracert</li>
-<li>Connexion au domaine</li>
+<li>Connexion des postes au réseau</li>
+</ul>
+
+</section>
+
+
+<section>
+<h2>Configuration technique</h2>
+
+<ul>
+<li>Création VLAN 10 / 20 / 30 sur switch manageable</li>
+<li>Configuration trunk entre switch et routeur</li>
+<li>Configuration inter-VLAN routing</li>
+<li>DHCP par VLAN</li>
+<li>DNS interne</li>
+<li>Passerelle par VLAN</li>
+<li>Tests de connectivité</li>
 </ul>
 
 </section>
